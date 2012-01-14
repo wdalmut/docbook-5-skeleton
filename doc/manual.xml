@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "./myentities.ent">
+%myent;
+]>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="manual" xml:lang="&lang;">
+    <info>
+        <title>&book.title;</title>
+        <subtitle>&book.subtitle;</subtitle>
+        <edition>&book.edition;</edition>
+        <pubdate><?dbtimestamp?></pubdate>
+        <copyright>
+            <year>&copyright;-<?dbtimestamp format="Y"?></year>
+            <holder>
+                &company.name;
+                (<uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="&company.url;">&company.url;</uri>)
+            </holder>
+        </copyright>
+    </info>
+
+    <part xml:id="introduction">
+        <info><title>Introduction</title></info>
+
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ref/overview.xml" parse="xml">
+        <!-- 
+            <xi:fallback>
+                <xi:include href="../en/ref/overview.xml" parse="xml"/>
+            </xi:fallback>
+        -->
+        </xi:include>
+    </part>
+
+    <part xml:id="learning">
+        <info><title>Quickstart</title></info>
+
+
+        <chapter xml:id="learning.all"><info><title>Tutorials</title></info>
+
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="tutorials/quickstart.xml" parse="xml">
+            <!-- 
+                <xi:fallback>
+                    <xi:include href="../en/tutorials/quickstart.xml" parse="xml"/>
+                </xi:fallback>
+            -->
+            </xi:include>
+        </chapter>
+    </part>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ref/copyrights.xml" parse="xml">
+        <!-- 
+        <xi:fallback>
+            <xi:include href="../en/ref/copyrights.xml" parse="xml"/>
+        </xi:fallback>
+        -->
+    </xi:include>
+</book>

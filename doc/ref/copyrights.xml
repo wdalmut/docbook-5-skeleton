@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "../myentities.ent">
+%myent;
+]>
+<appendix xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="copyrights">
+    <?dbhtml filename="copyrights.html" ?>
+    <info>
+        <title>Copyright Information</title>
+    </info>
+
+    <para>
+        The following copyrights are applicable.
+    </para>
+
+    <para>
+        Copyright © copyright-<?dbtimestamp format="Y"?> Walter Dal Mut
+        (<uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="&company.url;">&company.url;</uri>)
+    </para>
+</appendix>
