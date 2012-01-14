@@ -4,18 +4,29 @@
     <info>
         <title>Very brief introduction.</title>
     </info>
-  
-    <para>
-        Only a code example:
-    </para>
-    <programlisting language="php"><![CDATA[
+
+    <section>
+        <?dbhtml filename="tutorials/quickstart-this-title.html" ?>
+        <info>
+            <title>This title</title>
+        </info>
+        
+        <para>
+            Only a code example:
+	    </para>
+	    
+	    <programlisting language="php"><![CDATA[
 $b = new B(new A));
-]]></programlisting>
-    <para>
-        Another paragraph
-    </para>
+]]>
+        </programlisting>
+	    
+	    <para>
+	        Another paragraph
+	    </para>
+    </section>  
     
     <section>
+        <?dbhtml filename="tutorials/quickstart-example-title.html" ?>
         <info>
             <title>Example title</title>
         </info>
