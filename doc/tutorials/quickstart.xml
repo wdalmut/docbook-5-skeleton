@@ -14,4 +14,29 @@ $b = new B(new A));
     <para>
         Another paragraph
     </para>
+    
+    <section>
+        <info>
+            <title>Example title</title>
+        </info>
+        
+        <mediaobject>
+            <imageobject condition="web">
+                <imagedata fileref="../figs/web/eg1.gif" format="GIF" scale="70"/>
+            </imageobject>
+            <!-- 
+            <imageobject condition="print">
+	           <imagedata fileref="../figs/print/db5d_ref09.pdf" format="PDF"/>
+            </imageobject>
+            -->
+            <textobject>
+                <phrase>Example figure</phrase>
+            </textobject>
+            <caption>
+                <para>
+                    Example figure...
+                </para>
+            </caption>
+	    </mediaobject>
+    </section>
 </chapter>

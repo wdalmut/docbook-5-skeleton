@@ -3,7 +3,11 @@
 <!ENTITY % myent SYSTEM "./myentities.ent">
 %myent;
 ]>
-<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="manual" xml:lang="&lang;">
+<book 
+    xmlns="http://docbook.org/ns/docbook"
+    version="5.0" 
+    xml:id="manual" 
+    xml:lang="&lang;">
     <info>
         <title>&book.title;</title>
         <subtitle>&book.subtitle;</subtitle>
@@ -32,10 +36,6 @@
 
     <part xml:id="learning">
         <info><title>Quickstart</title></info>
-
-
-        <chapter xml:id="learning.all"><info><title>Tutorials</title></info>
-
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="tutorials/quickstart.xml" parse="xml">
             <!-- 
                 <xi:fallback>
@@ -43,7 +43,6 @@
                 </xi:fallback>
             -->
             </xi:include>
-        </chapter>
     </part>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ref/copyrights.xml" parse="xml">
