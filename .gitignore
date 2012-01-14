@@ -1,4 +1,5 @@
 manual-html/*.html
+manual-html/*/
 .settings
 .buildpath
 .project
